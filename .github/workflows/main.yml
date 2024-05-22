@@ -4,7 +4,12 @@ jobs:
   calculate:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repository
       - uses: actions/checkout@v4
       with: 
-        x: 12
-        y: 3
+        repository: Jesuji/gitaction
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+          - name: Run a custom action
+        run: echo $((12 + 3))
+        shell: bash
