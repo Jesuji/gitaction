@@ -1,13 +1,7 @@
-name: CI
+name: Our Workflow
 on: push
 jobs:
   calculate:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      
-      - name: gitaction
-        uses: ./action.yml
-        with:
-          x: 12
-          y: 3
+      - uses: action.yml
