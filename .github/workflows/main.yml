@@ -4,4 +4,4 @@ jobs:
   calculate:
     runs-on: ubuntu-latest
     steps:
-      - uses: 제스지/calc-action@main
+      - uses: Jesuji/calc-action@main
