@@ -4,4 +4,4 @@ jobs:
   calculate:
     runs-on: ubuntu-latest
     steps:
-    - uses: gitction@main
+    - uses: actions/checkout@v4
