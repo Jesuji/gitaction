@@ -6,7 +6,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       
-      - name: Print x and y values
+      - name: gitaction
         uses: action.yml
         with:
           x: 12
