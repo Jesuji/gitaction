@@ -4,4 +4,4 @@ jobs:
   calculate:
     runs-on: ubuntu-latest
     steps:
-    - uses: PNU/gitction@main
+    - uses: gitction@main
