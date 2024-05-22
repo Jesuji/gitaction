@@ -1,14 +1,14 @@
-name: "Print XY Values"
-description: "A simple action to print x and y values"
+name: CI
 inputs:
   x:
-    description: "First number"
-    required: true
+    default: 0
   y:
-    description: "Second number"
-    required: true
+    default: 0
 runs:
   using: "composite"
   steps:
+    - run: echo "Hi, I'm a CI!"
+      shell: bash
     - run: echo "x = ${{ inputs.x }}, y = ${{ inputs.y }}"
       shell: bash
+
