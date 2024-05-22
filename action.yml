@@ -1,14 +1,6 @@
-name: CI
-inputs:
-  x:
-    default: 0
-  y:
-    default: 0
+name: Calc Action
 runs:
   using: "composite"
   steps:
-    - run: echo "Hi, I'm a CI!"
+    - run: echo "Hi, I'm a calculator action!"
       shell: bash
-    - run: echo "x = ${{ inputs.x }}, y = ${{ inputs.y }}"
-      shell: bash
-
