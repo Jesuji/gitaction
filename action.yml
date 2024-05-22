@@ -1,13 +1,14 @@
-name: gitaction
+name: "Print XY Values"
+description: "A simple action to print x and y values"
 inputs:
   x:
-    default: 0
+    description: "First number"
+    required: true
   y:
-    default: 0
+    description: "Second number"
+    required: true
 runs:
   using: "composite"
   steps:
-    - run: echo "Hi, I'm a gitaction!"
-      shell: bash
     - run: echo "x = ${{ inputs.x }}, y = ${{ inputs.y }}"
       shell: bash
