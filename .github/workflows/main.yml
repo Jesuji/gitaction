@@ -4,4 +4,4 @@ jobs:
   calculate:
     runs-on: ubuntu-latest
     steps:
-      - uses: /home/runner/work/gitaction/gitaction
+      - uses: 제스지/gitaction@main
