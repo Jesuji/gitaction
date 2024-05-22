@@ -7,7 +7,7 @@ jobs:
       - uses: actions/checkout@v4
       
       - name: Print x and y values
-        uses: ./github/actions/print-xy
+        uses: action.yml
         with:
           x: 12
           y: 3
