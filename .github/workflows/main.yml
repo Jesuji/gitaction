@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - id: calc
-      - uses: Jesuji/gitaction@main
+        uses: Jesuji/gitaction@main
         with: 
           x: 12
           y: 3
