@@ -1,0 +1,6 @@
+name: gitaction
+runs: 
+  using: "composite"
+  steps: 
+  - run: echo "I'm gitaction!"
+  shell: bash
