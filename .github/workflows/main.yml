@@ -1,15 +1,10 @@
-name: CI
-
-on: [push]
-
+name: Our Workflow
+on: push
 jobs:
-  build:
+  calculate:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
-
-    - name: Run gitaction
-      uses: ./
-
+      - uses: actions/checkout@v2
+        with:
+          x: 12
+          y: 3
