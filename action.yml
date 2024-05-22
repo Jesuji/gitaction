@@ -1,6 +1,13 @@
 name: gitaction
-runs: 
+inputs:
+  x:
+    default: 0
+  y:
+    default: 0
+runs:
   using: "composite"
-  steps: 
-  - run: echo "I'm gitaction!"
-  shell: bash
+  steps:
+    - run: echo "Hi, I'm a gitaction!"
+      shell: bash
+    - run: echo "x = ${{ inputs.x }}, y = ${{ inputs.y }}"
+      shell: bash
